@@ -2,7 +2,21 @@
     --all-title: #212121;
     --btn-color:#FFFFFF;
     --btn-background:#2196F3;
-
+}
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+ul, ol {
+    margin: 0;
+    padding-left: 0;
+}
+button {
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 6px;
+}
+img {
+    display: block;
 }
 
 body {
@@ -10,13 +24,37 @@ body {
     font-style: normal;
     color: #757575;
 }
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .link, .header-first {
     text-decoration: none;
 }
 /* Хедер */
-.header-list, .description-list, .about-list, .team-list, .footer-list, .example-search, .example-list {
+.header {
+    border-bottom: 0.2px;
+    border-bottom-style: solid;
+    border-bottom-color: red;
+}
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    
+    margin-top: 24px;
+    margin-bottom: 25px;
+}
+.header-list, .description-list, .about-list, .team-list, .example-search, .example-list {
     list-style-type: none;
+    display: flex;
 }
 .header-first, .footer-logo-first {
     font-family: 'Raleway';
@@ -29,6 +67,16 @@ body {
 }
 .header-second {
     color: #212121;
+}
+.header-list {
+    margin-left: 93px;
+}
+.header-item {
+    margin-right: 50px;
+}
+
+.header-connect {
+    margin-left: auto;
 }
 .header-link {
     font-weight: 500;
@@ -59,31 +107,38 @@ body {
     letter-spacing: 0.02em;
     color: #757575;
 }
+.header-tel {
+    margin-left: 50px;
+}
 .hero {
     background: #2F303A;
+    text-align: center;
+
+
 }
 .hero-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
-    background: #2F303A;
+    padding-top: 200px;
+    margin-bottom: 40px;
+    
 }
 .hero-btn {
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    min-width: 200px;
+    height: 50px;
+
     letter-spacing: 0.06em;
-    cursor: pointer;
     color: #FFFFFF;
     background-color: var(--btn-background);
+    margin-bottom: 200px;
     
 }
 .description-title {
@@ -93,6 +148,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--all-title);
+    padding-top: 94px;
 }
 .description-text {
     font-weight: 400;
@@ -108,12 +164,33 @@ body {
     letter-spacing: 0.03em;
     color: var(--all-title);
 }
+.about {
+    padding-top: 94px;
+}
+.about-title {
+    padding-bottom: 50px;
+}
+.about-list {
+    margin-left: -30px;
+}
+.about-foto {
+    width: calc(100% / 3 - 30px);
+    margin-left: 30px;
+}
+
+/* Блок команда */
 .team {
 
     background: #F5F4FA;
 }
+.team-title {
+    padding-top: 188px;
+    padding-bottom: 50px;
+}
 .team-people {
     background-color: #FFFFFF;
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
 }
 .team-name {
     font-weight: 500;
@@ -122,6 +199,8 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--all-title);
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 .team-position {
     font-weight: 400;
@@ -129,10 +208,31 @@ body {
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
+    padding-bottom: 30px;
+}
+.team-list {
+    padding-bottom: 94px;
+    margin-left: -30px;
+    
 }
 /* Portfolio */
 .example {
     background: #E5E5E5;
+    
+}
+.example-search {
+    justify-content: center;
+    padding-bottom: 34px;
+}
+.example-list {
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+}
+.example-galery {
+    width: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
 }
 .example-title {
     font-weight: 700;
@@ -170,8 +270,15 @@ body {
 .footer {
     background-color: #2F303A;
 }
+.logo-footer {
+    padding-top: 60px;
+}
 .footer-logo-second {
     color: #FFFFFF;
+}
+.footer-list {
+    margin-top: 20px;
+    padding-bottom: 60px;
 }
 .footer-street {
     font-weight: 400;
