@@ -27,6 +27,8 @@ body {
 .container {
     width: 1200px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .section {
     padding-top: 94px;
@@ -52,8 +54,16 @@ body {
     margin-top: 24px;
     margin-bottom: 25px;
 }
-.header-list, .description-list, .about-list, .team-list, .example-search, .example-list {
+.header-list, .description-list, .about-list, .team-list, .example-search, .example-list, .footer-list {
     list-style-type: none;
+    
+}
+.header-list,
+.description-list,
+.about-list,
+.team-list,
+.example-search,
+.example-list {
     display: flex;
 }
 .header-first, .footer-logo-first {
@@ -113,6 +123,9 @@ body {
 .hero {
     background: #2F303A;
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    
 
 
 }
@@ -123,7 +136,6 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding-top: 200px;
     margin-bottom: 40px;
     
 }
@@ -138,7 +150,6 @@ body {
     letter-spacing: 0.06em;
     color: #FFFFFF;
     background-color: var(--btn-background);
-    margin-bottom: 200px;
     
 }
 .description-title {
@@ -148,13 +159,15 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--all-title);
-    padding-top: 94px;
+    margin-bottom: 10px;
 }
 .description-text {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    width: 270px;
+    height: 75px;
 }
 .about-title, .team-title {
     font-weight: 700;
@@ -216,10 +229,9 @@ body {
     
 }
 /* Portfolio */
-.example {
+/* .example {
     background: #E5E5E5;
-    
-}
+} */
 .example-search {
     justify-content: center;
     padding-bottom: 34px;
