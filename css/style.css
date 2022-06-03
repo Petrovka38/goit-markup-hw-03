@@ -32,7 +32,7 @@ body {
 }
 .section {
     padding-top: 94px;
-    padding-bottom: 94px;
+    
 }
 
 .link, .header-first {
@@ -166,7 +166,7 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    width: 270px;
+    max-width: 270px;
     height: 75px;
 }
 .about-title, .team-title {
@@ -197,7 +197,7 @@ body {
     background: #F5F4FA;
 }
 .team-title {
-    padding-top: 188px;
+    
     padding-bottom: 50px;
 }
 .team-people {
@@ -234,7 +234,11 @@ body {
 } */
 .example-search {
     justify-content: center;
-    padding-bottom: 34px;
+    margin-bottom: 34px;
+}
+.example-btn {
+    margin-right: 8px;
+
 }
 .example-list {
     flex-wrap: wrap;
@@ -245,6 +249,11 @@ body {
     width: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-bottom: 30px;
+    
+}
+.example-title-text {
+    padding: 20px 24px;
+    border: 1px solid grey;
 }
 .example-title {
     font-weight: 700;
@@ -252,6 +261,7 @@ body {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--all-title);
+    margin-bottom: 4px;
 }
 .example-text {
     font-weight: 400;
@@ -268,6 +278,7 @@ body {
     line-height: 1.62;
     letter-spacing: 0.03em;
     cursor: pointer;
+    padding: 6px 22px;
 }
 .btn .hero-btn {
     color: var(--all-title);
@@ -281,16 +292,17 @@ body {
 /* Футер */
 .footer {
     background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .logo-footer {
-    padding-top: 60px;
+    
 }
 .footer-logo-second {
     color: #FFFFFF;
 }
 .footer-list {
     margin-top: 20px;
-    padding-bottom: 60px;
 }
 .footer-street {
     font-weight: 400;
